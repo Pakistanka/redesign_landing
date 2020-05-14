@@ -1,0 +1,104 @@
+.slider-small{
+    margin: 10px 5px;
+}
+
+.purchase-item {
+    width: 308px;
+    height: 380px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+}
+.purchase-item__descriprion{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    left: 40%;
+}
+.purchase-item__umbrella {
+    width: 75px;
+}
+.purchase-item__skeleton {
+
+}
+.purchase-item__text {
+    color: #fff;
+    font-family: "Amateur Printer JNL", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: .5em 0px;
+}
+.purchase-item__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.purchase-item__leaf {
+    width: 31px;
+    height: 23px;
+}
+.purchase-item__light {
+    width: 23px;
+    height: 23px;
+}
+
+/* --------------------------
+        TABLET (768px)
+---------------------------*/
+
+@media only screen and (min-width: 768px) {
+    .purchase-item {
+        justify-content: center;
+    }
+    .purchase-item__skeleton {
+        height: 600px;
+    }
+    .purchase-item__descriprion {
+        top: 13%;
+    }
+    .s_panel__middle--tabs {
+        order: 3;
+    }
+}
+
+/* --------------------------
+        Desktop (1200px)
+---------------------------*/
+
+@media only screen and (min-width: 1200px) {
+    .purchase-item {
+        justify-content: flex-start;
+        height: 100vh;
+        margin-top: -100px;
+    }
+    .purchase-item__descriprion {
+        top: 27%;
+        left: 30%;
+    }
+    .purchase-item__skeleton {
+        height: 750px;
+    }
+    .purchase-item__umbrella {
+        width: 125px;
+    }
+    .purchase-item__text {
+        font-size: 23px;
+    }
+    .purchase-item__leaf {
+        width: 31px;
+        height: 62px;
+    }
+    .purchase-item__light {
+        width: 40px;
+        height: 62px;
+    }
+}
+
+

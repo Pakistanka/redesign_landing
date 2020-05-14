@@ -1,0 +1,68 @@
+/* --------------------------
+            GENERAL 
+-------------------------- */
+html,
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #a300ff;
+}
+
+body {
+    min-width: 320px;
+    overflow-X: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (min-width: 768px) {
+    .s_panel_MOBILE {
+        position: relative;
+        height: 0;
+    }
+    body {
+        justify-content: space-between;
+    }
+    .s_panel_desktop {
+        display: none;
+    }
+
+}
+
+/* ------------------------------
+		TABLET (1200px)
+------------------------------ */
+
+@media only screen and (min-width: 1200px) {
+    .s_panel_desktop {
+        display: block;
+    }
+    .s_panel_MOBILE {
+       display: none;
+    }
+    body {
+        overflow:hidden;
+    }
+
+}
+
+
+
+
+
+

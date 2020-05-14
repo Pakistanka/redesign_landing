@@ -1,0 +1,42 @@
+.settings {
+    position: fixed;
+    top: 30%;
+    left: calc(100% - 50px);
+    height: 196px;
+    background-color: #ededed;
+    z-index: 10;
+    border-radius: 15px;
+}
+
+.settings_open {
+    transform: rotate(270deg);
+    margin-top: 4rem;
+    display: flex;
+    position: relative;
+    right: 10px;
+
+    color: #222222;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.settings_icon {
+    background-image: url('../images/computer.svg');
+    background-repeat: no-repeat;
+    background-size: 25px 16px;
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin: 1rem 0.5rem 0rem;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .settings {
+        display: none;
+    }
+} 

@@ -1,0 +1,212 @@
+.header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+.header__block {
+    position: relative;
+    margin-top: 260px;
+    width: 280px;
+}
+
+.header__bg {
+    background-image: url(../images/svg/skeleton_tshirt.png);
+    width: 281px;
+    height: 324px;
+    background-size: 280px 494px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    /* background-position: -9px 0px; */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.header__nav, .header__logo {
+    padding-top: 15px;
+}
+
+.header__join {
+    display: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header__link {
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header__link span {
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__elem {
+    list-style: none;
+}
+
+.header__elem:first-child:hover {
+    color: #63009c;
+    background-color: #ffffff;
+}
+
+.header__elem:first-child, .header__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.header__elem:first-child {
+    width: 31px;
+    height: 31px;
+    background-color: #a300ff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.3;
+    background-color: rgba(99, 0, 156, .3);
+
+}
+
+.header__number {
+    width: 16px;
+    height: 16px;
+    background-color: #7200b3;
+    font-family: "Basis Grotesque Pro Black", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    bottom: 16px;
+    left: 13px;
+}
+
+.header__image {
+    height: 31px;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo--sticker {
+    width: 107px;
+    position: relative;
+    z-index: 3;
+}
+
+.header__logo--park {
+    width: 83px;
+    position: relative;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.header__title {
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    letter-spacing: -0.95px;
+}
+
+.header__subtitle {
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header__button {
+    background-image: url(../images/button-bg.svg);
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-color: #a300ff;
+    width: 140px;
+    height: 38px;
+    margin: 25px 0px 30px;
+}
+
+.header__button span {
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header__button::after {
+    content: "";
+    background-image: url(../images/white-angle.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 35px;
+    display: block;
+    position: relative;
+    bottom: 34px;
+    left: 124px;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (min-width: 600px) {
+    .header {
+        /* flex-direction: row; */
+        justify-content: space-around;
+    }
+    .header__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin-left: 45%;
+    }
+    .header__block {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 335px;
+    }
+    .header__bg {
+        height: 442px;
+    }
+    .header__join {
+        display: flex;
+        padding-top: 1.5rem;
+        margin-left: 40%;
+    }
+}
+
+/* ------------------------------
+		DESKTOP (1200px)
+------------------------------ */

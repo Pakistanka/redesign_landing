@@ -1,0 +1,132 @@
+.create_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -80px; */
+    width: 100vw;
+    /* height: 100vh; */
+    overflow: hidden;
+    display:none;
+}
+
+.create_area__share {
+    position: fixed;
+    top: 40%;
+}
+
+.create_area__share_img {
+    position: relative;
+    top: -33px;
+    right: 26px;
+}
+
+.skeleton_img {
+    position: absolute;
+    top: -90px;
+    height: 115vh;
+}
+
+.white_img {
+    position: absolute;
+    width: 70px
+}
+
+/* Left tools */
+
+.tooth {
+    left: 20%;
+    top: 7%;
+}
+
+.eye {
+    left: 20%;
+    width: 60px;
+    top: 33%;
+}
+
+.knife {
+    left: 18%;
+    top: 55%;
+    width: 110px;
+}
+
+.mushroom {
+    left: 10%;
+    top: 35%;
+    width: 45px;
+}
+
+.herb {
+    left: 10%;
+    top: 55%;
+    width: 40px;
+}
+
+/* Right tools */
+
+.tongue {
+    right: 10%;
+    top: 15%;
+}
+
+.flower {
+    right: 10%;
+    top: 34%;
+    width: 100px;
+}
+
+.scissors {
+    right: 20%;
+    top: 23%;
+    width: 110px;
+}
+
+.bone {
+    right: 20%;
+    top: 50%;
+    /* width: 60px; */
+}
+
+.coffin {
+    top: 50%;
+    right: 10%;
+    width: 60px;
+}
+
+.light {
+    right: 20%;
+    top: 60%;
+    width: 54px;
+}
+
+.leaf {
+    right: 10%;
+    top: 65%;
+    width: 50px;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (min-width: 768px) {
+    .create_area {
+        /* height: 50vh; */
+        display: block;
+    }
+    .leaf,
+    .light,
+    .coffin,
+    .bone,
+    .scissors,
+    .herb,
+    .tongue,
+    .flower,
+    .tooth,
+    .eye,
+    .knife,
+    .mushroom {
+        display: block;
+    }
+
+}

@@ -1,0 +1,83 @@
+.price {
+    background-color: #a300ff;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    align-items: flex-start;
+}
+
+.price_lable {
+    color: #000000;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.price_money {
+    margin: 5px 0px 10px;
+    color: #1b1b1b;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price_btn {
+    background-image: url("../images/button-bg.svg");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 137px;
+    height: 38px;
+
+    color: #ffffff;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.price_btn::after {
+    content: "";
+    background-image: url(../images/white-angle.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 130px;
+
+}
+
+.price_btn:hover {
+    background-image: none;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    padding-top: 0px;
+}
+
+.price_btn:hover::after {
+    background-image: none;
+    background-color: #222222;
+    display: none;
+}
+
+.price_info {
+    margin-right: 5px;
+    color: #000000;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    margin-bottom: 25px;
+}
