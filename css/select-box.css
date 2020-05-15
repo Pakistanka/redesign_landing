@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .select-box {
 	position: relative;
 	display: block;
@@ -12,31 +19,41 @@
 
 .select-box__current {
 	position: relative;
-	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	outline: none;
 	height: 27px;
 }
 .select-box__current:focus + .select-box__list {
 	opacity: 1;
-	animation-name: none;
+	-webkit-animation-name: none;
+	        animation-name: none;
 }
 .select-box__current:focus + .select-box__list .select-box__option {
 	cursor: pointer;
 }
 .select-box__current:focus .select-box__icon {
-	transform: translateY(-50%) rotate(180deg);
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	    -ms-transform: translateY(-50%) rotate(180deg);
+	        transform: translateY(-50%) rotate(180deg);
 }
 .select-box__icon {
    position: absolute;
    top: 50%;
    right: 15px;
-   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+           transform: translateY(-50%);
    width: 8px;
    height: 4px;
+   -webkit-transition: 0.2s ease;
+   -o-transition: 0.2s ease;
    transition: 0.2s ease;
 }
 .select-box__value {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
 }
 .select-box__input {
@@ -61,12 +78,18 @@
 	padding: 0;
 	list-style: none;
 	opacity: 0;
-	animation-name: HideList;
-	animation-duration: 0.5s;
-	animation-delay: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: step-start;
-	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	-webkit-animation-name: HideList;
+	        animation-name: HideList;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: step-start;
+	        animation-timing-function: step-start;
+	-webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 	z-index:15;
 }
 .select-box__option {
@@ -78,12 +101,24 @@
 	color: #546c84;
 	background-color: #fbfbfb;
 }
-@keyframes HideList {
+@-webkit-keyframes HideList {
 	from {
-		transform: scaleY(1);
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
    }
 	to {
-		transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+   }
+}
+@keyframes HideList {
+	from {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+   }
+	to {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
    }
 }
 
@@ -103,30 +138,40 @@
 
 .select-box__desktop__current {
 	position: relative;
-	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	outline: none;
 }
 .select-box__desktop__current:focus + .select-box__desktop__list {
 	opacity: 1;
-	animation-name: none;
+	-webkit-animation-name: none;
+	        animation-name: none;
 }
 .select-box__desktop__current:focus + .select-box__desktop__list .select-box__desktop__option {
 	cursor: pointer;
 }
 .select-box__desktop__current:focus .select-box__desktop__icon {
-	transform: translateY(-50%) rotate(180deg);
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	    -ms-transform: translateY(-50%) rotate(180deg);
+	        transform: translateY(-50%) rotate(180deg);
 }
 .select-box__desktop__icon {
    position: absolute;
    top: 50%;
    right: 15px;
-   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+           transform: translateY(-50%);
    width: 8px;
    height: 4px;
+   -webkit-transition: 0.2s ease;
+   -o-transition: 0.2s ease;
    transition: 0.2s ease;
 }
 .select-box__desktop__value {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
 }
 .select-box__desktop__input {
@@ -151,12 +196,18 @@
 	padding: 0;
 	list-style: none;
 	opacity: 0;
-	animation-name: HideListBig;
-	animation-duration: 0.5s;
-	animation-delay: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: step-start;
-	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	-webkit-animation-name: HideListBig;
+	        animation-name: HideListBig;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: step-start;
+	        animation-timing-function: step-start;
+	-webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 	z-index:15;
 }
 .select-box__desktop__option {
@@ -168,11 +219,23 @@
 	color: #546c84;
 	background-color: #fbfbfb;
 }
-@keyframes HideListBig {
+@-webkit-keyframes HideListBig {
 	from {
-		transform: scaleY(1);
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
    }
 	to {
-		transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+   }
+}
+@keyframes HideListBig {
+	from {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+   }
+	to {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
    }
 }

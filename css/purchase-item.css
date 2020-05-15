@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .slider-small{
     margin: 10px 5px;
 }
@@ -7,17 +14,33 @@
     height: 380px;
     margin: 0 auto;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 }
 .purchase-item__descriprion{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 35%;
     left: 40%;
 }
@@ -37,8 +60,12 @@
     margin: .5em 0px;
 }
 .purchase-item__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .purchase-item__leaf {
     width: 31px;
@@ -55,7 +82,9 @@
 
 @media only screen and (min-width: 768px) {
     .purchase-item {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .purchase-item__skeleton {
         height: 600px;
@@ -64,7 +93,9 @@
         top: 13%;
     }
     .s_panel__middle--tabs {
-        order: 3;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
 }
 
@@ -74,7 +105,9 @@
 
 @media only screen and (min-width: 1200px) {
     .purchase-item {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         height: 100vh;
         margin-top: -100px;
     }
@@ -100,5 +133,4 @@
         height: 62px;
     }
 }
-
 
