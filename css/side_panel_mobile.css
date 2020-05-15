@@ -8,13 +8,13 @@
 .s_panel_close_btn {
     position: absolute;
     right: 220px;
-    width: 35px;
+    width: 25px;
     
     opacity: 0;
-    background-color: black;
-    margin: 27px 27px 27px 27px;
+    /* background-color: black; */
+    margin: 27px 17px 27px 17px;
     z-index: 50;
-    /* padding: 10px; */
+    padding: 10px;
 }
 .line {
     height: 3px;
@@ -69,12 +69,12 @@
     font-weight: 400;
     letter-spacing: 0.61px;
 }
-.s_panel__base_label,
+/* .s_panel__base_label,
 .s_panel__color_label,
 .s_panel_desktop__base_label,
 .s_panel_desktop__color_label {
     text-shadow: -4px 5px 5px rgba(112,112,112,0.77);
-}
+} */
 
 
 .s_panel__picker--circle,
@@ -238,6 +238,9 @@
     font-size: 10px;
     font-weight: bold;
     letter-spacing: -0.11px;
+
+    border: 0;
+    outline: 0;
 }
 .s_panel__change--button:hover {
     background-color: #a300ff;
@@ -339,10 +342,6 @@
     height: 14px;
     margin: 2px;
 }
-.star-half {
-    margin-left: -2px;
-    margin-right: 2px;
-}
 .s_panel__price-button {
     color: #ffffff;
     font-family: "Basis Grotesque Pro";
@@ -421,6 +420,7 @@
 .price {
     display: none;
 }
+
 
 /* --------------------------
         TABLET (768px)

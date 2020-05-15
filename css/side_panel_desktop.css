@@ -28,7 +28,7 @@
 } 
 .line {
     height: 3px;
-    width: 35px;
+    width: 25px;
     background-color: black;
 }
 
@@ -178,6 +178,11 @@
     letter-spacing: -0.19px;
 
     background-color: white;
+}
+
+.s_panel__gender .s_panel__gender-button--active {
+    background-color: black;
+    color: white;
 }
 
 .s_panel__gender button:hover {

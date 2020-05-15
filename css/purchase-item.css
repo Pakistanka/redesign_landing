@@ -83,7 +83,7 @@
         left: 30%;
     }
     .purchase-item__skeleton {
-        height: 750px;
+        height: 100%;
     }
     .purchase-item__umbrella {
         width: 125px;

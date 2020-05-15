@@ -1,9 +1,8 @@
 
 var logo_tl = gsap.timeline();
 
-logo_tl.from(".header__logo--sticker", {duration: .6,  ease: "elastic.out(1, 0.3)", opacity: 0, scale: 2.5, rotation:190})
-.from(".header__logo--park", {duration: .6, ease: "elastic.out(1, 0.3)", opacity: 0, scale: 2.5, rotation:-190},"-=0.3")
-
+logo_tl.from(".header__logo--sticker", {duration: .3, opacity: 0, scale: 2.5})
+.from(".header__logo--park", {duration: .3, opacity: 0, scale: 2.5},"-=0.2")
 
 let header_logo = document.querySelector('.header__logo');
 

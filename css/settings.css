@@ -22,10 +22,10 @@
 }
 
 .settings_icon {
-    background-image: url('../images/computer.svg');
+    background-image: url('../images/settings.svg');
     background-repeat: no-repeat;
-    background-size: 25px 16px;
-    width: 18px;
+    background-size: 30px 16px;
+    width: 30px;
     height: 16px;
     display: block;
     margin: 1rem 0.5rem 0rem;
