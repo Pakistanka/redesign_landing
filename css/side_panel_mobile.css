@@ -475,9 +475,6 @@
     color: grey;
 }
 
-.s_panel_desktop {
-    /* display: none !important; */
-}
 .price {
     display: none;
 }
@@ -517,9 +514,9 @@
     .s_panel {
         visibility: hidden;
     }
-    .s_panel_desktop {
+    /* .s_panel_desktop {
         display: none;
-    }
+    } */
     
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px){

@@ -1,7 +1,6 @@
 .s_panel_desktop {
     position: absolute;
     
-    
     top: 0;
     right: 0;
     
@@ -16,6 +15,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+
+    display: none;
 }
 
 .s_panel-wrap{
@@ -226,19 +227,6 @@
     background-color: white;
 }
 
-.s_panel__gender .s_panel__gender-button--active {
-    /* background-color: black;
-    color: white; */
-}
-
-.s_panel__gender button:hover {
-    /* background-color: #222;
-    color: #fff; */
-}
-.s_panel__gender button:active {
-    /* background-color: #222;
-    color: #fff; */
-}
 
 .genderHighLight{
     background-color: #ccc;
@@ -253,205 +241,15 @@
     .s_panel__middle--menus {
         width: 100%;
     }
+    .s_panel_desktop {
+        display: block;
+    }
 
 }
 
 
-/* -----------------------------
-        HEADER STICKERPACK
---------------------------------*/
 
-/* .s_panel__change--button {
-    background-color: #a300ff;
-    opacity: 0.3;
-    color: #fff;
-    width: 56px;
-    border-radius: 10px;
-    height: 20px;
-    margin-left: 10px;
 
-    color: #ffffff;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: -0.11px;
-}
-.s_panel__change--button:hover {
-    background-color: #a300ff;
-    opacity: 1;
-}
-
-.s_panel_change__type {
-    margin-top: 30px;
-}
-
-.s_panel_change__type, .s_panel__change_pack {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.s_panel_type {
-    color: #000000;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-}
-.s_panel__main-title {
-    color: #000000;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.04px;
-}
-.s_panel_author {
-    color: #000000;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-}
-.s_panel_title {
-    color: #1b1b1b;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-}
-
-/* -----------------------------
-        SIDE PANEL PRICE
---------------------------------*/
-
-/* .s_panel__price-row_1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.s_panel__price_tag {
-    color: #1b1b1b;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-
-    margin-right: 12px;
-}
-.s_panel__price_info {
-    color: #000000;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    padding: 10px 0px;
-}
-.s_panel__info {
-    display: flex;
-    justify-content: space-between;
-}
-.s_panel__info_reviews {
-    display: flex;
-    justify-content: center;
-}
-.s_panel__info_reviews_label, 
-.s_panel__info_about {
-    color: #1b1b1b;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
-}
-.s_panel__info_review_number {
-    margin-left: 5px;
-    color: grey;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: -0.08px;
-}
-.s_panel__stars {
-    display: flex;
-    justify-content: center;
-}
-.s_panel__stars-star {
-    width: 14px;
-    height: 14px;
-    margin: 2px;
-}
-.star-half {
-    margin-left: -2px;
-    margin-right: 2px;
-} */ 
-/* .s_panel__price-button {
-    color: #ffffff;
-    font-family: "Basis Grotesque Pro";
-    font-size: 15px;
-    font-weight: bold;
-
-    background-image: url('../images/violet-bg.svg');
-    background-repeat: no-repeat;
-    width: 135px;
-    height: 37px;
-    background-color: transparent;
-    border: none;
-    /* padding-top: 10px; */
-    /* position: relative; */
-/* } */ 
-/* .s_panel__price-button::after{
-    content: "";
-    background-image: url(../images/white-angle.svg);
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 35px;
-
-    display: block;
-    position: absolute;
-    bottom: 4px;
-    left: 126px;
-
-}
-.s_panel__price-button:hover {
-    background-image: none;
-    background-color: #a300ff;
-}
-.s_panel__price-button:hover::after{
-    background-image: none;
-    background-color: #a300ff;
-
-    display: none;
-}
-.s_panel__bottom-block {
-    position: relative;
-    background-color: #EDEDED;
-    bottom: 0px;
-}
-.s_panel__info--block {
-    width: 230px;
-    background-color: white;
-    padding: 10px;
-
-    color: #000000;
-    font-family: "Basis Grotesque Pro", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-
-    visibility: hidden;
-    opacity: 0;
-}
-.s_panel__info_about {
-    padding: 10px 0px;
-    width: 115px;
-    text-decoration: none;
-
-}
-.s_panel__info_wrap {
-    padding: 10px 10px;
-    width: 100%;
-}
-
-.s_panel__model_label,
-.s_panel_author,
-.s_panel__size_label {
-    color: grey;
-} */
 
 
 

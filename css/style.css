@@ -58,9 +58,6 @@ button:focus {
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
-    .s_panel_desktop {
-        display: none;
-    }
 
 }
 
@@ -74,9 +71,6 @@ button:focus {
     }
     .s_panel_MOBILE {
        display: none;
-    }
-    body {
-        /* overflow:hidden; */
     }
 
 }
