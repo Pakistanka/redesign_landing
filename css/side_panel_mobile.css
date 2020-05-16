@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .s_panel {  
     width: 100vw;
     background-color: #EDEDED;
@@ -23,10 +16,11 @@
     width: 25px;
     
     opacity: 0;
-    /* background-color: black; */
     margin: 27px 17px 27px 17px;
     z-index: 50;
     padding: 10px;
+
+    cursor: pointer;
 }
 .line {
     height: 3px;
@@ -93,13 +87,6 @@
     font-weight: 400;
     letter-spacing: 0.61px;
 }
-/* .s_panel__base_label,
-.s_panel__color_label,
-.s_panel_desktop__base_label,
-.s_panel_desktop__color_label {
-    text-shadow: -4px 5px 5px rgba(112,112,112,0.77);
-} */
-
 
 .s_panel__picker--circle,
 .s_panel_desktop__picker--circle {
