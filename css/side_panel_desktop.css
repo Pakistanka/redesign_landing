@@ -6,7 +6,7 @@
     right: 0;
     
     background-color: #EDEDED;
-    height: 100vh;
+    height: 100%;
     
     visibility: hidden;
     display: -webkit-box;
@@ -21,6 +21,7 @@
 .s_panel-wrap{
     padding: 50px 25px;
     width: 250px;
+    margin-right: 20px;
 }
 
 .s_panel_desktop_close_btn {

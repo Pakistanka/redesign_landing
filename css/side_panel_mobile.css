@@ -50,12 +50,17 @@
     height: 9px;
     display: block;
 }
+.s_panel__base_label__show:focus,
+.s_panel__color_label__show:focus {
+    outline: none;
+    border: none;
+} 
 
 .s_panel__middle--menus,
 .s_panel__middle-version,
 .s_panel__middle--tabs
 {
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 
 .s_panel__color_selector, 
