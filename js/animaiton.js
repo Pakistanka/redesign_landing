@@ -142,21 +142,24 @@ if (w >= 768){
 
 
 if (w > 1199){
-    let settings = document.querySelector(".settings");
-    let s_panel_close_btn = document.querySelector(".s_panel_close_btn");
+    let ssettings = document.querySelector(".settings");
+    let ss_panel_close_btn = document.querySelector(".s_panel_close_btn");
 
-    settings.onclick = openPanel = () => {
+    ssettings.onclick = showPanel = () => {
         gsap.to(".s_panel_desktop", {  visibility: 'visible'});
         gsap.to(".s_panel_desktop", {  duration: .5, autoAlpha: 1});
         gsap.to('.s_panel_close_btn', { delay: .5, autoAlpha: 1 });
         gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 0 })
     }
     
-    s_panel_close_btn.onclick = closePanel = () => {
+    ss_panel_close_btn.onclick = hidePanel = () => {
         gsap.to(".s_panel_desktop", { duration: .5, autoAlpha: 0});
         gsap.to('.s_panel_close_btn', { autoAlpha: 0},"-=1");
         gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 1 });
     }
+
+
+
 
     let base_opener = document.querySelector(".open_base");
     let base_open = true; 
