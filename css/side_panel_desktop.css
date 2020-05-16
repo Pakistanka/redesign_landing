@@ -1,7 +1,7 @@
 .s_panel_desktop {
     position: absolute;
-    width: 250px;
-    padding: 50px 25px;
+    
+    
     top: 0;
     right: 0;
     
@@ -16,6 +16,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+
+.s_panel-wrap{
+    padding: 50px 25px;
+    width: 250px;
 }
 
 .s_panel_desktop_close_btn {
