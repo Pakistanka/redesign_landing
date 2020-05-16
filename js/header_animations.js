@@ -20,4 +20,4 @@ function mouseOut() {
 }
 
 
-gsap.from(".stickerpack-slider", {duration: 1, y: 150, opacity: 0});
+// gsap.from(".stickerpack-slider", {duration: 1, y: 150, opacity: 0});

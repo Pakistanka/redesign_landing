@@ -76,7 +76,7 @@ button:focus {
        display: none;
     }
     body {
-        overflow:hidden;
+        /* overflow:hidden; */
     }
 
 }
