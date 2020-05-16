@@ -1,3 +1,7 @@
+
+.DESKTOP {
+    display: none;
+}
 .s_panel_desktop {
     position: absolute;
     
@@ -16,13 +20,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
 
-    display: none;
+    /* display: none; */
 }
 
 .s_panel-wrap{
     padding: 50px 25px;
     width: 250px;
     margin-right: 20px;
+    /* visibility: hidden; */
 }
 
 .s_panel_desktop_close_btn {
@@ -241,7 +246,7 @@
     .s_panel__middle--menus {
         width: 100%;
     }
-    .s_panel_desktop {
+    .DESKTOP {
         display: block;
     }
 
