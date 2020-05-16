@@ -192,46 +192,31 @@
                         <div class="s_panel__model_label">Model</div>
                         <div class="s_panel__gender">
                             <div class="genderHighLight"></div>
-                            <button class="s_panel__gender-button s_panel__gender-button--active">MEN'S</button>
-                            <button class="s_panel__gender-button">WOMEN'S</button>
-                            <button class="s_panel__gender-button">KIDS</button>
+                            <button class="s_panel__gender-button  mob_sp_m">MEN'S</button>
+                            <button class="s_panel__gender-button  mob_sp_w">WOMEN'S</button>
+                            <button class="s_panel__gender-button  mob_sp_k">KIDS</button>
                         </div>
                     </div>
         
                     <div class="s_panel__size_selector">
                         <div class="s_panel__size_label">Size</div>
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1"
-                                        name="Ben" checked="checked" />
-                                    <p class="select-box__input-text">XL</p>
-                                </div>
-                                <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2"
-                                        name="Ben" checked="checked" />
-                                    <p class="select-box__input-text">L</p>
-                                </div>
-                                <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3"
-                                        name="Ben" checked="checked" />
-                                    <p class="select-box__input-text">S</p>
-                                </div>
-                                <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4"
-                                        name="Ben" checked="checked" />
-                                    <p class="select-box__input-text">XS</p>
-                                </div>
-                                <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="5"
-                                        name="Ben" checked="checked" />
-                                    <p class="select-box__input-text">M</p>
-                                </div><img class="select-box__icon" src="./images/svg/arrow-black.svg" alt="Arrow Icon"
-                                    aria-hidden="true" />
-                            </div>
-                            <ul class="select-box__list">
-                                <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">XL</label></li>
-                                <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">L</label></li>
-                                <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">S</label></li>
-                                <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">XS</label></li>
-                                <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">M</label></li>
-                            </ul>
-                        </div>
+                        <div class="center">
+                            <select name="sources" id="sources" class="custom-select sources" placeholder="M">
+                              <option value="profile">S</option>
+                              <option value="word">L</option>
+                              <option value="hashtag">XL</option>
+                              <option value="mediem">M</option>
+                            </select>
+                          </div>
+                        <!-- <div class="s_panel__select">
+                            <select name="sources" id="sources" class="s_panel__select--select sources" placeholder="M"> 
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                          </div>  -->
                         <a href="#" class="s_panel__size_guide">Size guide</a>
                     </div>
     
@@ -295,9 +280,9 @@
                 <div class="s_panel__model_label">Model</div>
                 <div class="s_panel__gender">
                     <div class="s_panel__genderHighLight"></div>
-                    <button class="s_panel__gender-button s_panel__gender-button--active">MEN'S</button>
-                    <button class="s_panel__gender-button">WOMEN'S</button>
-                    <button class="s_panel__gender-button">KIDS</button>
+                    <button class="s_panel__gender-button  spanel_men">MEN'S</button>
+                    <button class="s_panel__gender-button  spanel_women">WOMEN'S</button>
+                    <button class="s_panel__gender-button  spanel_kids">KIDS</button>
                 </div>
             </div>
     
@@ -337,11 +322,6 @@
                 </div>
                 <a href="#" class="s_panel__size_guide">Size guide</a>
             </div>
-
-            
-      
-
-
 
             <section class="s_panel_desktop__middle--menus">
                 <div class="s_panel_desktop__base_selector middle">

@@ -260,3 +260,47 @@ if (w > 1199){
 }
 
 
+
+let spanelMen = document.querySelector(".spanel_men")
+let spanelWomen = document.querySelector(".spanel_women")
+let spanelKids = document.querySelector(".spanel_kids")
+
+gsap.to('.spanel_men',{backgroundColor: '#000', color: "#fff"});
+spanelMen.onclick = onMen = () => {
+    gsap.to('.spanel_men',{backgroundColor: '#000', color: "#fff"});
+    gsap.to('.spanel_women',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.spanel_kids',{backgroundColor: '#fff', color: "#000"});
+}
+
+spanelWomen.onclick = onWomen = () => {
+    gsap.to('.spanel_men',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.spanel_women',{backgroundColor: '#000', color: "#fff"});
+    gsap.to('.spanel_kids',{backgroundColor: '#fff', color: "#000"});
+}
+spanelKids.onclick = onKids = () => {
+    gsap.to('.spanel_men',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.spanel_women',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.spanel_kids',{backgroundColor: '#000', color: "#fff"});
+}
+
+let mobSpM = document.querySelector('.mob_sp_m');
+let mobSpW = document.querySelector('.mob_sp_w');
+let mobSpK = document.querySelector('.mob_sp_k');
+
+gsap.to('.mob_sp_m',{backgroundColor: '#000', color: "#fff"});
+mobSpM.onclick = onM = () => {
+    gsap.to('.mob_sp_m',{backgroundColor: '#000', color: "#fff"});
+    gsap.to('.mob_sp_w',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.mob_sp_k',{backgroundColor: '#fff', color: "#000"});
+}
+
+mobSpW.onclick = onW = () => {
+    gsap.to('.mob_sp_m',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.mob_sp_w',{backgroundColor: '#000', color: "#fff"});
+    gsap.to('.mob_sp_k',{backgroundColor: '#fff', color: "#000"});
+}
+mobSpK.onclick = onK = () => {
+    gsap.to('.mob_sp_m',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.mob_sp_w',{backgroundColor: '#fff', color: "#000"});
+    gsap.to('.mob_sp_k',{backgroundColor: '#000', color: "#fff"});
+}

@@ -244,12 +244,12 @@
 }
 
 .s_panel__gender button:hover {
-    background-color: #222;
-    color: #fff;
+    /* background-color: #222;
+    color: #fff; */
 }
 .s_panel__gender button:active {
-    background-color: #222;
-    color: #fff;
+    /* background-color: #222;
+    color: #fff; */
 }
 
 .genderHighLight{
@@ -413,7 +413,7 @@
 }
 .s_panel__price-button {
     color: #ffffff;
-    font-family: "Basis Grotesque Pro";
+    font-family: "Basis Grotesque Pro", sans-serif;
     font-size: 15px;
     font-weight: bold;
 
@@ -536,10 +536,10 @@
         right: 0px;
         width: 35px;
         opacity: 0;
-        background-color: black;
-        margin: 27px 27px 27px 27px;
+        /* background-color: black; */
+        margin: 27px 17px 27px 17px;
         z-index: 50;
-        /* padding: 10px; */
+        padding: 10px;
         bottom: 240px;
     }  
 }

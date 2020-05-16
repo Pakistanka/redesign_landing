@@ -87,7 +87,7 @@
                 justify-content: center;
     }
     .purchase-item__skeleton {
-        height: 600px;
+        height: 100%;
     }
     .purchase-item__descriprion {
         top: 13%;

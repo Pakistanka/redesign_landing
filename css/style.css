@@ -31,6 +31,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+
+            height: 100%;
 }
 
 .footer {
@@ -49,7 +51,7 @@ button:focus {
 @media only screen and (min-width: 768px) {
     .s_panel_MOBILE {
         position: relative;
-        height: 0;
+        /* height: 0; */
     }
     body {
         -webkit-box-pack: justify;
