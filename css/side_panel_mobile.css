@@ -1,5 +1,5 @@
 .s_panel {  
-    width: 100vw;
+    width: 98vw;
     background-color: #EDEDED;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,6 +491,7 @@
             -ms-flex-direction: row;
                 flex-direction: row;
         padding: 20px 0px;
+        width: 100vw;
     }
     .s_panel__middle--menus {
         -webkit-box-ordinal-group: 3;
@@ -512,12 +513,9 @@
 
 
     .s_panel {
-        visibility: hidden;
+        /* visibility: hidden; */
         /* display: none; */
     }
-    /* .s_panel_desktop {
-        display: none;
-    } */
     
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px){

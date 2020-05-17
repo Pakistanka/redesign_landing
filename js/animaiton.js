@@ -118,14 +118,16 @@ var w = screen.width;
 if (w >= 768 && w < 1198){
     let settings = document.querySelector(".settings");
     // let s_panel = document.querySelector(".s_panel");
+    let s_panel_close_btn = document.querySelector(".s_panel_close_btn");
     let priceBtn = document.querySelector(".price_btn");
-    
+
+    gsap.to(".s_panel", { duration: .3, visibility: 'hidden'});
 
     settings.onclick = openPanel = () => {
         
         gsap.to(".s_panel", { duration: .3, visibility: 'visible'});
 
-        gsap.to('.move-line', {duration: .1, y: -110})
+        gsap.to('.move-line', {duration: .1, y: "-110px"})
         gsap.to('.s_panel_close_btn', { delay: .5, autoAlpha: 1 });
         gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 0 })
     }
