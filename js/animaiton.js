@@ -115,11 +115,11 @@ var w = screen.width;
     
 
 
-if (w >= 768){
+if (w >= 768 && w < 1198){
     let settings = document.querySelector(".settings");
     // let s_panel = document.querySelector(".s_panel");
-    let s_panel_close_btn = document.querySelector(".s_panel_close_btn");
     let priceBtn = document.querySelector(".price_btn");
+    
 
     settings.onclick = openPanel = () => {
         
@@ -129,7 +129,7 @@ if (w >= 768){
         gsap.to('.s_panel_close_btn', { delay: .5, autoAlpha: 1 });
         gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 0 })
     }
-    // priceBtn.onclick = openPanel;
+    priceBtn.onclick = openPanel;
     
     document.querySelector(".s_panel_close_btn").onclick = closePanel = () => {
         gsap.to(".s_panel", { duration: .3, visibility: 'hidden'});

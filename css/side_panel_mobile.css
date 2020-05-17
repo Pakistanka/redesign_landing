@@ -513,6 +513,7 @@
 
     .s_panel {
         visibility: hidden;
+        /* display: none; */
     }
     /* .s_panel_desktop {
         display: none;
