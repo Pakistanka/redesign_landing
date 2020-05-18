@@ -233,15 +233,6 @@
     background-color: white;
 }
 
-.s_panel__gender button:hover {
-    /* background-color: #222;
-    color: #fff; */
-}
-.s_panel__gender button:active {
-    /* background-color: #222;
-    color: #fff; */
-}
-
 .genderHighLight{
     background-color: #ccc;
 }
@@ -535,7 +526,7 @@
     .s_panel{
         height: 100vh;
         flex-direction: column;
-        width: 250px;
+        width: 20vw;
         padding: 100px 40px 0px;
 
         align-items: flex-start;
@@ -545,7 +536,6 @@
     
         top: 0;
         right: 0;
-        
         background-color: #EDEDED;
         height: 100%;
         
