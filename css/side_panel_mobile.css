@@ -8,6 +8,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+            position: relative;
 }
 
 .s_panel_close_btn {
@@ -42,14 +43,6 @@
     margin-bottom: 20px;
 }
 
-.s_panel__base_label__show,
-.s_panel__color_label__show {
-    background-image: url('../images/svg/arrow-black.svg');
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 9px;
-    display: block;
-}
 .s_panel__base_label__show:focus,
 .s_panel__color_label__show:focus {
     outline: none;
@@ -497,6 +490,7 @@
                 flex-direction: row;
         padding: 20px 0px;
         width: 100vw;
+        visibility: hidden;
     }
     .s_panel__middle--menus {
         -webkit-box-ordinal-group: 3;
@@ -565,6 +559,9 @@
     .s_panel__middle-version,
     .s_panel__middle--tabs{
         margin: 10px 0px;
+    }
+    .s_panel__middle-version {
+        margin: 20px 0px;
     }
     .s_panel__middle--price {
         margin-top: calc(30% * 1);
