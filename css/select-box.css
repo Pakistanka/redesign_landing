@@ -89,13 +89,14 @@
 			position: relative;
 			display: block;
 			padding: 0 22px;
-			border-bottom: 1px solid #b5b5b5;
-			font-size: 18px;
-			font-weight: 600;
-			color: #b5b5b5;
+			/* border-bottom: 1px solid #b5b5b5; */
+			font-size: 14px;
+			/* font-weight: 600; */
+			color: #222;
 			line-height: 47px;
 			cursor: pointer;
 			transition: all .4s ease-in-out;
+			font-family: "Basis Grotesque Pro", sans-serif;
 		  }
 		  .custom-option:first-of-type {
 			border-radius: 4px 4px 0 0;
